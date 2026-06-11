@@ -1,7 +1,7 @@
 # langgraph-tenancy
 
 [![CI](https://github.com/ac12644/langgraph-tenancy/actions/workflows/ci.yml/badge.svg)](https://github.com/ac12644/langgraph-tenancy/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/langgraph-tenancy)](https://pypi.org/project/langgraph-tenancy/)
+[![PyPI - Version](https://img.shields.io/pypi/v/langgraph-tenancy.svg)](https://pypi.org/project/langgraph-tenancy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **Tenant isolation for LangGraph persistence — as a drop-in wrapper.**
