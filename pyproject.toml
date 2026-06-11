@@ -50,6 +50,11 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["langgraph_tenancy"]
 
+# .gitignore is intentionally not excluded: hatchling always ships it in
+# sdists and uses it for file selection when building from the sdist.
+[tool.hatch.build.targets.sdist]
+exclude = [".github"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
