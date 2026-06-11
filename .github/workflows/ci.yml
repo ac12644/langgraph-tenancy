@@ -30,8 +30,8 @@ jobs:
       LG_TENANCY_PG_URI: postgresql://postgres:postgres@localhost:5432/langgraph_tenancy_test
       LG_TENANCY_PG_REQUIRED: "1"
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install
@@ -42,8 +42,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8
       - name: Ruff check
         run: uvx ruff check .
       - name: Ruff format check
