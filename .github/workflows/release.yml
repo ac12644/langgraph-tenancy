@@ -29,10 +29,11 @@ jobs:
       - uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.12"
+          activate-environment: true
       - name: Install
         run: uv pip install -e ".[test]"
       - name: Test
-        run: uv run pytest -v
+        run: pytest -v
 
   build:
     needs: test
