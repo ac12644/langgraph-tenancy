@@ -1,6 +1,6 @@
 [project]
 name = "langgraph-tenancy"
-version = "0.1.0"
+version = "0.1.1"
 description = "Tenant isolation and per-tenant usage metering for LangGraph checkpointers and stores"
 readme = "README.md"
 requires-python = ">=3.10"
