@@ -6,6 +6,10 @@
 
 **Tenant isolation for LangGraph persistence — as a drop-in wrapper.**
 
+> Using LangGraph.js? Same package, same guarantees:
+> [ac12644/langgraph-tenancy-js](https://github.com/ac12644/langgraph-tenancy-js) ·
+> [npm](https://www.npmjs.com/package/langgraph-tenancy)
+
 LangGraph's own [threat model](https://github.com/langchain-ai/langgraph/blob/main/.github/THREAT_MODEL.md) says it plainly:
 
 > Checkpoint savers index by `thread_id`. Without application-level auth, any
